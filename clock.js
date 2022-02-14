@@ -19,10 +19,10 @@ function showTime() {
   s = s < 10 ? "0" + s : s;
 
   let time = h + ":" + m + ":" + s + ":" + session;
-  document.getElementById("MyClockDisplay").innerText = time;
-  document.getElementById("MyClockDisplay").textContent = time;
+  document.getElementById("MyClockDisplay").innerText = time; //The innerText property sets or returns the text content of specified node and all its descendants
+  document.getElementById("MyClockDisplay").textContent = time; //The textContent property returns the content of all elemetns and differes from innerText since this returns the content of all elements except for <script> and <style> elements
 
-  setTimeout(showTime, 1000);
+  setTimeout(showTime, 1000); //setTimeout calls a function (showTime) after a number of milliseconds (1000)
 }
 
 showTime();
